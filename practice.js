@@ -1,3 +1,5 @@
+// FUNCTIONS
+
 var isFirst = function (number) {
     for (var i = 2; i < number; i++) {
         if (number % i === 0) {
@@ -116,16 +118,4 @@ var isBetter = function (student1, student2) {
 
 }
 
-
-
-
-/*
-ON SEPARE notre phrase GRACE AUX ESPACES (split)
-ON CREE un compteur {'le' : 1, 'premier': 2}
-POUR CHAQUE mots
-    VERIFIER si le mot est dans le compteur (compteur[mot])
-        je l'incrémente
-    SINON
-        je lui assigne la valeur
-AFFICHE compteur
-*/
+//
