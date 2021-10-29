@@ -118,4 +118,16 @@ var isBetter = function (student1, student2) {
 
 }
 
-//
+// THIS
+
+var myFunction = function (a) {
+    return this
+}
+var eleve = {
+    myFunction: function () {
+        return this
+    }
+}
+myFunction() // window
+eleve.myFunction() // eleve {}
+myFunction.call('Salut', 'argument1') // 'Salut'
