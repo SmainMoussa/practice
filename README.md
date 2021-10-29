@@ -1,2 +1,2 @@
 # practice
-practicing some javascript, php and more. . .
+practicing some javascript, php and more. . . .
