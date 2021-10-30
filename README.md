@@ -25,3 +25,4 @@ To install SASS Anywhere (standalone)
 - ./dart-sass/sass(folder) sass/style.scss style.css
 - parameter --watch to auto apply changes on save
 - can @import multiple libs inside the scss files and it will automatically add it to the main style.css 
+- download minireset lib if you want and import it to scss file
