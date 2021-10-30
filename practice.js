@@ -187,3 +187,43 @@ Student.prototype.moyenne = function () {
 var kev = new Student('Kev', [8, 12])
 var sarah = new Student('Sarah')
 
+
+
+// TRY CATCH
+
+var a = {}
+
+try {
+    a.myMethod()
+} catch (e) { // catch takes an argument of the error that has been returned
+    console.log("there is a error!: " + e.stack) // can add TypeError
+} finally {
+    console.log("finally")
+}
+
+var demo = function (number) {
+    if (number > 5) {
+        throw new Error("Number cant be > 5")
+    }
+    return number * 2
+}
+
+try {
+    demo(6)
+} catch (e) {
+    console.log("erreur de chiffre " + e)
+}
+
+var double = function (number) {
+    var result = number * 2
+    if (number.isNaN(result)) {
+        throw new Error("it's not a number")
+    }
+    return result
+}
+
+try {
+    console.log(double("aze"))
+} catch (e) {
+    console.log("Impossible to multiply " + e)
+}
