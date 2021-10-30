@@ -1,0 +1,10 @@
+@import url("libs/reset.scss");
+body {
+  background: red;
+}
+
+p {
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
