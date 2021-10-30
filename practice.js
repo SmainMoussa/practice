@@ -131,3 +131,59 @@ var eleve = {
 myFunction() // window
 eleve.myFunction() // eleve {}
 myFunction.call('Salut', 'argument1') // 'Salut'
+
+
+// PROTOTYPE
+
+var eleve = {
+    moyenne: function () {
+        var sum = 0
+        for (var i = 0; i < this.marks.length; i++) {
+            sum += this.marks[i]
+        }
+        return sum / this.marks.length
+    },
+    present: function () {
+        console.log(this.name + " is present");
+    }
+}
+
+var jean = {
+    name: 'Jean',
+    marks: [10, 20]
+}
+var marc = {
+    name: 'Marc',
+    marks: [20, 20]
+}
+jean.__proto__ = eleve
+marc.__proto__ = eleve
+
+/* jean.__proto__ = eleve "l'objet jean implementera les fonctions présentes dans eleve"
+
+Object.getPrototypeOf(jean) > nous donne le prototype de jean 
+
+create new object that has prototype of student */
+var marion = Object.create(eleve) // it will have functions that eleve has
+
+var Student = function (name, marks) {
+    if (marks != undefined) {
+        this.marks = marks
+    }
+    this.name = name
+}
+
+Student.prototype.moyenne = function () {
+    if (this.marks == undefined) {
+        return NaN
+    }
+    var sum = 0
+    for (var i = 0; i < this.marks.length; i++) {
+        sum += this.marks[i]
+    }
+    return sum / this.marks.length
+}
+
+var kev = new Student('Kev', [8, 12])
+var sarah = new Student('Sarah')
+
