@@ -1,0 +1,7 @@
+p {
+  transition: color 1s ease;
+}
+
+.red {
+  color: red;
+}
