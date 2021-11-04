@@ -2,7 +2,7 @@
 
 practicing some javascript, php and more. . . .
 
-                                                    What I have reviewed for now:
+                                              What I have reviewed for now:
 
 **JAVASCRIPT**
 
@@ -14,6 +14,9 @@ practicing some javascript, php and more. . . .
 - this operator
 - prototypes
 - try catch
+- Window object
+- DOM
+- Events
 
 **PHP**
 
